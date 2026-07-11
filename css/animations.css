@@ -1,0 +1,117 @@
+.about,
+.event-card,
+.timeline-item,
+.register,
+.footer {
+  opacity: 0;
+
+  transform: translateY(60px);
+
+  transition: 1s;
+}
+
+.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.btn {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  transform: translate(-50%, -50%) scale(0);
+
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(15);
+
+    opacity: 0;
+  }
+}
+.ember {
+  position: absolute;
+
+  bottom: -20px;
+
+  width: 4px;
+
+  height: 4px;
+
+  background: #ff8c00;
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 12px orange;
+
+  animation: ember 8s linear infinite;
+}
+
+@keyframes ember {
+  0% {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-110vh) translateX(40px);
+
+    opacity: 0;
+  }
+}
+.scroll-top {
+  position: fixed;
+
+  right: 30px;
+
+  bottom: 30px;
+
+  width: 55px;
+
+  height: 55px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: var(--gold-gradient);
+
+  color: #111;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: 0.35s;
+
+  z-index: 999;
+}
+
+.scroll-top.show {
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  transform: translateY(-6px);
+}

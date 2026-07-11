@@ -1,0 +1,140 @@
+/*=========================================
+GOOGLE FONTS
+=========================================*/
+
+:root {
+  /*==============================
+    COLORS
+    ==============================*/
+
+  --bg-color: #090909;
+  --section-color: #101010;
+  --card-color: #181818;
+
+  --primary: #d4af37;
+  --secondary: #ff7b00;
+  --accent: #ff4500;
+
+  --white: #ffffff;
+  --text: #e7e7e7;
+  --gray: #9a9a9a;
+
+  --border: rgba(212, 175, 55, 0.18);
+
+  /*==============================
+    GRADIENTS
+    ==============================*/
+
+  --gold-gradient: linear-gradient(
+    135deg,
+    #ffd700 0%,
+    #d4af37 40%,
+    #b8860b 100%
+  );
+
+  --fire-gradient: linear-gradient(135deg, #ff4500, #ff6b00, #ff9800);
+
+  --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.88));
+
+  /*==============================
+    TYPOGRAPHY
+    ==============================*/
+
+  --title-font: "Artifika", serif;
+
+  --body-font: "Averia Gruesa Libre", system-ui, cursive;
+
+  --biggest-font: 5.5rem;
+  --h1-font: 3.6rem;
+  --h2-font: 2.5rem;
+  --h3-font: 1.5rem;
+
+  --large-font: 1.2rem;
+  --normal-font: 1rem;
+  --small-font: 0.9rem;
+
+  /*==============================
+    FONT WEIGHT
+    ==============================*/
+
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+
+  /*==============================
+    SPACING
+    ==============================*/
+
+  --section-padding: 120px;
+
+  --container-width: 1200px;
+
+  --radius: 18px;
+
+  /*==============================
+    TRANSITIONS
+    ==============================*/
+
+  --transition: 0.35s ease;
+
+  /*==============================
+    SHADOWS
+    ==============================*/
+
+  --shadow-sm: 0 0 10px rgba(255, 106, 0, 0.15);
+
+  --shadow-md: 0 0 25px rgba(255, 106, 0, 0.25);
+
+  --shadow-lg: 0 0 45px rgba(255, 106, 0, 0.35);
+
+  --gold-glow: 0 0 12px rgba(212, 175, 55, 0.55);
+
+  --fire-glow: 0 0 30px rgba(255, 94, 0, 0.55);
+
+  /*==============================
+    Z INDEX
+    ==============================*/
+
+  --z-fixed: 1000;
+  --z-overlay: 999;
+  --z-tooltip: 100;
+}
+
+/*=========================================
+BREAKPOINT VARIABLES
+=========================================*/
+
+@media screen and (max-width: 992px) {
+  :root {
+    --biggest-font: 4.5rem;
+
+    --h1-font: 3rem;
+
+    --h2-font: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --biggest-font: 3.5rem;
+
+    --h1-font: 2.4rem;
+
+    --h2-font: 1.8rem;
+
+    --large-font: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --biggest-font: 2.8rem;
+
+    --h1-font: 2rem;
+
+    --h2-font: 1.6rem;
+
+    --normal-font: 0.95rem;
+  }
+}
